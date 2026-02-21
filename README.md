@@ -8,3 +8,4 @@ my python simple projects for
 6. password generator for given length
 7. to do list using json dict
 8. weather forecast using api
+9. currency convertor
