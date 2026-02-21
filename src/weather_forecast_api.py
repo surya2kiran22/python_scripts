@@ -1,8 +1,12 @@
 import requests
-import json
+import json 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 def weather(city):
-    api_key = '86535768e4c5b535730eb70bff1a8501'
+    api_key = os.getenv('api_key')
     base_url = 'http://api.openweathermap.org/data/2.5/weather'
 
     param = {'q':city,'appid':api_key,'units':'metric'}
@@ -20,6 +24,6 @@ def weather(city):
     #print(res.url)
     return f"The temperature is {temp} and humidity is {humidity} with {des}"
 
-
+#print(api_key)
 city = input("enter city name: ")
 print(weather(city))
