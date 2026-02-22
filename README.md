@@ -9,3 +9,4 @@ my python simple projects for
 7. to do list using json dict
 8. weather forecast using api
 9. currency convertor
+10. background process reminder for task and a exe file for it

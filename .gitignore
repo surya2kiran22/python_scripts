@@ -14,3 +14,8 @@ __pycache__/
 
 #secrets file as env
 .env
+
+#built and dist folder
+dist/
+build/
+
